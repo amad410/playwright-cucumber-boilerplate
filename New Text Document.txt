@@ -1,0 +1,12 @@
+install Playwright test for vscode
+npm test or npm run test
+
+CNTL + , will take to you to the settings
+search cucumber
+add relative paths to for features
+	"src/test/features/*.features"
+add relative paths to for glue
+  "src/test/steps/*.ts"
+
+
+sampletester@gmail.com | Amad7511!!

@@ -1,0 +1,38 @@
+{
+  "name": "playright-cucumber-boilerplate2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx ts-node src/helper/init.ts",
+    "test": "cucumber-js test || true",
+    "test:local": "cross-env ENV=LOCAL cucumber-js test || true",
+    "test:dev": "cross-env ENV=DEV cucumber-js test || true",
+    "test:qa": "cross-env ENV=QA cucumber-js test || true",
+    "test:staging": "cross-env ENV=STAGING cucumber-js test || true",
+    "test:rerunfailed": "cross-env ENV=QA cucumber-js -p rerun @rerun.txt",
+    "smoke": "npm run test --tags @smoke",
+    "smoke:local": "npm run test:local --tags @smoke",
+    "smoke:qa": "npm run test:qa --tags @smoke",
+    "smoke:dev": "npm run test:dev --tags @smoke",
+    "smoke:staging": "npm run test:staging --tags @smoke",
+    "report": "npx ts-node src/helper/report.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@playwright/test": "^1.34.0",
+    "checkly": "latest",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "ts-node": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
+}
