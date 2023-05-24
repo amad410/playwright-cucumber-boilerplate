@@ -10,6 +10,12 @@ TODO: Guide users through getting your code up and running on their own system. 
 3. Install VsCode
 4. Install plugin 'Cucumber (Gherkin) Full Support' from within VSCode.
 5. Restart System
+6. Perform CNTRL + (comma) to go to the VS settings
+7. Search cucumber
+8. Add relative paths for features
+	_src/test/features/*.features_
+9. Add relative paths for Glue
+	_src/test/steps/*.ts_
 
 ### Documentation
 If you want to learn more refer the following:
